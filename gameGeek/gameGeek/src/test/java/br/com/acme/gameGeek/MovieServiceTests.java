@@ -46,7 +46,8 @@ public class MovieServiceTests {
     @Test
     @DisplayName("Remove um filme pelo id")
     void testRemove(){
-        movieService.deleteById(1L);
+        // Mudei de 1L para 2L
+        movieService.deleteById(2L);
         List<Movie> movies = movieService.getAll();
         assertEquals(3, movies.size());
     }
